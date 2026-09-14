@@ -11,7 +11,7 @@ const itemVariants = {
 };
 
 const ContactSection = () => (
-  <section className="h-screen w-full bg-white text-black font-sans px-4 md:px-8 lg:px-12 overflow-hidden flex items-center justify-center relative">
+  <section className="min-h-screen lg:h-screen w-full bg-white text-black font-sans px-6 md:px-8 lg:px-12 py-16 md:py-24 lg:py-0 flex items-center justify-center relative">
     <motion.div
       className="grid grid-cols-1 lg:grid-cols-12 gap-y-8 lg:gap-x-16 max-w-[1400px] w-full mx-auto"
       variants={containerVariants}
@@ -20,12 +20,12 @@ const ContactSection = () => (
       viewport={{ once: true }}
     >
       <div className="lg:col-span-7 flex flex-col justify-between h-full py-2">
-        <motion.div variants={itemVariants} className="mb-8 lg:mb-0">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase leading-[0.9] tracking-tight text-left">
+        <motion.div variants={itemVariants} className="mb-6 lg:mb-0">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase leading-[0.95] md:leading-[0.9] tracking-tight text-left">
             İLETİŞİM <br />BİLGİLERİ <span className="inline-block ml-2">→</span>
           </h1>
         </motion.div>
-        <motion.div variants={itemVariants} className="mt-8 lg:mt-0 hidden lg:block">
+        <motion.div variants={itemVariants} className="mt-6 md:mt-8 lg:mt-0 hidden sm:block">
           <h2 className="text-xs font-bold uppercase tracking-widest mb-4 text-black/60">Doğrudan Bağlantı</h2>
           <p className="text-base md:text-lg font-normal leading-relaxed text-black/80 max-w-md text-left">
             Form doldurmakla vakit kaybetmeyin. Bizimle doğrudan WhatsApp, telefon veya e-posta kanalları üzerinden anında iletişime geçebilirsiniz.

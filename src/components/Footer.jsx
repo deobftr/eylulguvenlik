@@ -20,7 +20,7 @@ const Footer = () => {
   return (
     <footer
       ref={ref}
-      className="bg-black text-white font-sans pt-12 md:pt-20 border-t border-white/10 h-screen flex flex-col overflow-hidden relative"
+      className="bg-black text-white font-sans border-t border-white/10 min-h-screen md:h-screen flex flex-col justify-between overflow-hidden relative"
     >
       {/* Top horizontal orange gradient line */}
       <div
@@ -35,7 +35,7 @@ const Footer = () => {
       >
         {/* Top Grid */}
         <motion.div
-          className="px-6 md:px-12 lg:px-16 max-w-[1600px] mx-auto w-full grid grid-cols-1 md:grid-cols-3 gap-y-10 md:gap-x-12 shrink-0 pt-24 md:pt-36"
+          className="px-6 md:px-12 lg:px-16 max-w-[1600px] mx-auto w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-8 sm:gap-y-10 md:gap-x-12 shrink-0 pt-12 md:pt-36"
           variants={containerVariants}
         >
           {/* Services */}
@@ -89,7 +89,7 @@ const Footer = () => {
           </motion.div>
 
           {/* Contacts */}
-          <motion.div variants={itemVariants} className="flex flex-col gap-1">
+          <motion.div variants={itemVariants} className="flex flex-col gap-1 sm:col-span-2 md:col-span-1">
             <h3 className="font-sans text-xs font-bold uppercase tracking-widest mb-4 text-white/80">
               Bize Ulaşın
             </h3>
@@ -110,7 +110,7 @@ const Footer = () => {
         {/* Bottom Logo */}
         <motion.div
           style={{ opacity, scale }}
-          className="w-full flex-1 flex flex-col justify-center items-center overflow-hidden select-none pb-4 px-6"
+          className="w-full flex-1 flex flex-col justify-center items-center overflow-hidden select-none py-6 md:pb-4 px-6"
         >
           <div className="relative flex flex-col items-center justify-center">
             {/* Subtle orange glow behind logo */}
@@ -123,10 +123,10 @@ const Footer = () => {
             <img
               src={`${import.meta.env.BASE_URL}logo.webp`}
               alt="Eylül Elektronik Logo"
-              className="relative z-10 h-[12vh] md:h-[15vh] max-h-[140px] w-auto object-contain opacity-90 brightness-100 contrast-125 drop-shadow-[0_0_25px_rgba(247,148,29,0.25)]"
+              className="relative z-10 h-[8vh] sm:h-[10vh] md:h-[15vh] max-h-[90px] md:max-h-[140px] w-auto object-contain opacity-90 brightness-100 contrast-125 drop-shadow-[0_0_25px_rgba(247,148,29,0.25)]"
             />
           </div>
-          <p className="font-sans font-black text-[9px] md:text-xs tracking-[0.4em] uppercase text-white/30 mt-6 text-center">
+          <p className="font-sans font-black text-[9px] md:text-xs tracking-[0.4em] uppercase text-white/30 mt-3 md:mt-6 text-center">
             AUDIO ANA BAYİSİ - ANKARA
           </p>
         </motion.div>

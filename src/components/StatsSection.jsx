@@ -139,7 +139,7 @@ const StatCounter = ({ value, suffix, label, description, icon, index = 0 }) => 
         </motion.div>
       </motion.div>
       <span className="mb-4 font-sans text-[11px] font-bold uppercase tracking-[0.25em] text-white">{label}</span>
-      <h3 className="mb-6 font-sans text-8xl md:text-9xl font-bold tracking-tight leading-none">
+      <h3 className="mb-6 font-sans text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight leading-none">
         {count.toLocaleString()}{suffix}
       </h3>
       <p className="max-w-sm font-sans text-base leading-6 text-white/65">{description}</p>
@@ -148,16 +148,16 @@ const StatCounter = ({ value, suffix, label, description, icon, index = 0 }) => 
 };
 
 const StatsSection = () => (
-  <section className="w-full bg-black text-white py-32 relative border-t border-[#F7941D]/20">
+  <section className="w-full bg-black text-white py-20 md:py-32 relative border-t border-[#F7941D]/20">
     <div
       className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#F7941D]/40 to-transparent pointer-events-none"
       aria-hidden="true"
     />
     <div className="mx-auto max-w-7xl px-6">
-      <div className="mb-24">
+      <div className="mb-12 md:mb-24">
         <h2 className="font-sans text-xs font-bold uppercase tracking-[0.2em]">Hakkımızda</h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-40">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-16 md:gap-y-40">
         <StatCounter
           index={0}
           icon={<CameraIcon />}

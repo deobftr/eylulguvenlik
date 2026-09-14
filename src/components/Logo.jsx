@@ -4,8 +4,7 @@ const Logo = () => {
       <img
         src={`${import.meta.env.BASE_URL}logo.webp`}
         alt="Eylül Elektronik"
-        className="w-auto object-contain transition-all duration-300"
-        style={{ height: "12rem" }}
+        className="h-20 md:h-32 lg:h-48 w-auto object-contain transition-all duration-300"
       />
     </div>
   );

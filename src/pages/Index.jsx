@@ -51,7 +51,7 @@ const Index = () => {
         />
         {/* Subtle noise texture overlay */}
         <div
-          className="absolute inset-0 pointer-events-none z-0 opacity-[0.03]"
+          className="hidden md:block absolute inset-0 pointer-events-none z-0 opacity-[0.03]"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
           }}
@@ -65,7 +65,7 @@ const Index = () => {
         />
         {/* Animated glow orb */}
         <div
-          className="absolute pointer-events-none z-0 animate-pulse"
+          className="hidden md:block absolute pointer-events-none z-0 animate-pulse"
           style={{
             bottom: "-10%",
             left: "-5%",
@@ -77,7 +77,7 @@ const Index = () => {
           }}
         />
         <div
-          className="absolute pointer-events-none z-0"
+          className="hidden md:block absolute pointer-events-none z-0"
           style={{
             top: "10%",
             right: "-10%",
@@ -91,7 +91,7 @@ const Index = () => {
         />
 
         {/* Floating Particles */}
-        <div className="absolute inset-0 pointer-events-none z-[1] overflow-hidden">
+        <div className="hidden md:block absolute inset-0 pointer-events-none z-[1] overflow-hidden">
           {[...Array(12)].map((_, i) => (
             <div
               key={i}
@@ -157,7 +157,7 @@ const Index = () => {
             </a>
 
             {/* Main Heading */}
-            <h1 className="font-sans font-bold text-6xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-[8.5rem] leading-[0.9] tracking-tighter text-white uppercase text-left">
+            <h1 className="font-sans font-bold text-4xl sm:text-6xl md:text-8xl lg:text-8xl xl:text-[8.5rem] leading-[0.9] tracking-tighter text-white uppercase text-left">
               <motion.span
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -222,7 +222,7 @@ const Index = () => {
       </div>
 
       {/* Footer */}
-      <div ref={footerRef} className="relative z-0 h-screen w-full overflow-hidden bg-black text-white">
+      <div ref={footerRef} className="relative z-0 min-h-screen md:h-screen w-full overflow-hidden bg-black text-white">
         <motion.div style={{ y: footerY }} className="h-full w-full">
           <Footer />
         </motion.div>
