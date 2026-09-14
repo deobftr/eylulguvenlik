@@ -24,7 +24,7 @@ const App = () => (
         touchInertiaExponent: 1.55,
       }}
     >
-      <BrowserRouter>
+      <BrowserRouter basename="/eylulguvenlik">
         <Toaster />
         <Sonner />
         <Routes>
