@@ -9,7 +9,7 @@ const PROJECTS = [
     stack: "CCTV / IP Kamera / DVR / NVR",
     description: "Yüksek çözünürlüklü IP ve gece görüşlü CCTV kamera sistemleri ile ev, iş yeri ve tesisleriniz için 7/24 kesintisiz izleme, akıllı video analiz ve profesyonel kayıt çözümleri sunuyoruz.",
     links: { live: "#contact", code: "#" },
-    image: "/p1.jpg",
+    image: `${import.meta.env.BASE_URL}p1.jpg`,
     cta: "Detaylı Bilgi",
   },
   {
@@ -18,7 +18,7 @@ const PROJECTS = [
     stack: "Hırsız Alarmı / Yangın Alarmı / Duman Dedektörü",
     description: "Ev ve iş yerlerinizi izinsiz girişlere, yangın ve duman tehlikelerine karşı koruyan yüksek hassasiyetli dedektörler ve 7/24 alarm takip merkezi entegrasyonu.",
     links: { live: "#contact", code: "#" },
-    image: "/p2.jpg",
+    image: `${import.meta.env.BASE_URL}p2.jpg`,
     cta: "Detaylı Bilgi",
   },
   {
@@ -27,7 +27,7 @@ const PROJECTS = [
     stack: "Kartlı Geçiş / Turnike / Bariyer",
     description: "Personel devam kontrol (PDKS), biyometrik parmak izi, yüz tanıma, kartlı geçiş ve araç otopark bariyer sistemleriyle alan güvenliği ve giriş-çıkış takibi.",
     links: { live: "#contact", code: "#" },
-    image: "/p3.jpg",
+    image: `${import.meta.env.BASE_URL}p3.jpg`,
     cta: "Detaylı Bilgi",
   },
   {
@@ -36,7 +36,7 @@ const PROJECTS = [
     stack: "Audio İnterkom / Daire İçi / Apartman",
     description: "Audio yetkili ana bayisi güvencesiyle; apartman, rezidans ve sitelere özel görüntülü diafon, dokunmatik daire içi paneller ve modern villa interkom sistemleri.",
     links: { live: "#contact", code: "#" },
-    image: "/p4.webp",
+    image: `${import.meta.env.BASE_URL}p4.webp`,
     cta: "Detaylı Bilgi",
   },
 ];

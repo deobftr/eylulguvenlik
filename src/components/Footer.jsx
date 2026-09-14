@@ -121,7 +121,7 @@ const Footer = () => {
               }}
             />
             <img
-              src="/logo.webp"
+              src={`${import.meta.env.BASE_URL}logo.webp`}
               alt="Eylül Elektronik Logo"
               className="relative z-10 h-[12vh] md:h-[15vh] max-h-[140px] w-auto object-contain opacity-90 brightness-100 contrast-125 drop-shadow-[0_0_25px_rgba(247,148,29,0.25)]"
             />
